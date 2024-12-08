@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidebar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <!-- Include the Google Places API script -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'sidebar.css' %}">
+  </head>
+  <div class="container-fluid bg-dark">
+  <h1 class="fw-bolder">EVENTS</h1>
+</div>
+    <div class="row mt-4">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100 card-hover">
+          <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bridal Shower</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book</button>
+             <!-- Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Booking Form -->
+            <form id="bookingForm">
+              <div class="mb-3">
+                <label for="bookingDate" class="form-label">Select Date</label>
+                <input type="date" class="form-control" id="bookingDate" required>
+              </div>
+              <div class="mb-3">
+                <label for="bookingTime" class="form-label">Select Time</label>
+                <input type="time" class="form-control" id="bookingTime" required>
+              </div>
+              <div class="mb-3">
+                <label for="payment" class="form-label">Payment</label>
+                <input type="number" class="form-control" id="payment" placeholder="Enter amount" required>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Get form values
+      const bookingDate = document.getElementById('bookingDate').value;
+      const bookingTime = document.getElementById('bookingTime').value;
+      const payment = document.getElementById('payment').value;
+
+      // Log the data or handle it as needed
+      console.log('Booking Date:', bookingDate);
+      console.log('Booking Time:', bookingTime);
+      console.log('Payment Amount:', payment);
+
+      // Clear the form and close the modal
+      this.reset();
+      const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+      modal.hide();
+
+      // Optionally, you can display a confirmation message
+      alert('Booking confirmed!');
+    });
+  </script>
+          </div>
+        </div>
+      </div> <h5 class="modal-title" id="bookingModalLabel">Book an Appointment</h5>
+            
+       <!-- Booking Modal -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100 card-hover">
+          <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Ruracio</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">BOOK</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100 card-hover">
+          <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Birthday</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">BOOK</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </head>
+    <div class="container-fluid bg-light px-0">
+    <h1 class="fw-bolder">WEDDING</h1>
+  </div>
+    <div class="row mt-4">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100 card-hover">
+          <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">BRONZE PACKAGE</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">BOOK</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100 card-hover">
+          <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">SILVER PACKAGE </h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">BOOK</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100 card-hover">
+          <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">GOLD PACKAGE</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">BOOK</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container-fluid bg-dark mx-0">
+        <h1 class="fw-bolder">PERSONAL SHOOT & TOURS AND TRAVEL</h1>
+      </div>
+            <div class="row mt-4 px-0">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 card-hover">
+                  <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DAY TRIP</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">BOOK</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 card-hover">
+                  <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">OVERLAND</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">BOOK</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 card-hover">
+                  <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">PROFESSIONAL SHOOT</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">BOOK</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+              <section id="contact" class="py-0 mt-0  text-center mx-3 bg-light"></section>
+              <footer class="text-center text-lg-start" style="background-color: #323130cb;">
+                <div class="container d-flex justify-content-center py-4">
+                    <a href="https://www.facebook.com" target="_blank" style="color: rgb(44, 102, 235); text-decoration: none;">
+                        <i class="fa fa-facebook py-3 mx-3"style="font-size: 30px;"></i>
+                    </a>
+                    <a href=" https://wa.me/0705512551" target="_blank" style="color: rgb(23, 181, 31); text-decoration: none;">
+                    <i class="fa fa-whatsapp py-3 mx-3"style="font-size: 30px;"></i> </a>
+                    <a href="https://www.facebook.com" target="_blank" style="color: #dd09b3; text-decoration: none;">
+                    <i class="fa fa-instagram py-3 mx-3"style="font-size: 30px;"></i></a>
+                </div>
+            
+                <!-- Copyright -->
+                <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  @ 254:
+                  <a class="text-white" href="https://mdbootstrap.com/">KLINSHOT</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+</html>
+
+  
+
+  
+  
+      

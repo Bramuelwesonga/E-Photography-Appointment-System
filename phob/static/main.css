@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@700&display=swap');
+*{
+    font-family:Caveat, sans-serif;
+    box-sizing:border-box;
+}
+.carousel-caption {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: rgb(41, 31, 11);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  margin-left: 200px;
+  width: 50%;
+}
+p{
+  color: blanchedalmond;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+      font-size: 34px; /* Smaller font size */
+      padding: 8px; /* Adjust padding */
+      max-width: 90%; /* Adjust maximum width */
+      margin-left: 200px;
+  }
+}
+.carousel-item img {
+  height: 100vh; /* Adjust the height as needed */
+  width: 100%;
+  object-fit:cover;
+}
+.gallery {
+  margin-top: 20px; /* Adjust this value to leave more or less space from the top */
+}
+
+.gallery img {
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Optional: keep shadow for a strong appearance */
+  width:100%;
+  margin-bottom: 16px; /* Ensure there is spacing between images */
+}
+
+@media (max-width: 767px) {
+  .gallery {
+      margin-top: 10px; /* Adjust top margin for smaller screens if needed */
+  }
+}
+

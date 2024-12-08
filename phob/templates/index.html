@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  
+
+  <title>254 shots</title>
+<!-- navigation bar -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 mb-2 sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h2 class="fw-bolder">KLINSHOTS</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#home">
+              <i class="fa fa-fw fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery"><i class="fa fa-fw fa-user"></i> Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Home Section -->
+<div class="align-items-center bg-dark" id="home">
+  <div class="container">
+    <div class="header">
+      <h1 class="display-4 mb-4">KLIN SHOTS</h1>
+      <div class="para fw-bolder">
+        <p>"I love creating memories through lenses that make me feel good in my day-to-day life. Capturing the best moments and turning ideas into reality through photography. Hikes and trails are also a part of me."</p>
+       </div>
+      <img class="image"src="{%static 'images/Bram.jpg' %}" alt="My image">
+      <img class="image flex-right mx-1" src="{%static 'images/Bram.jpg' %}" alt="My image">
+      <img class="image flex-right" src="{%static 'images/Bram.jpg' %}" alt="My image">
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn-transparent  py-10 custom-btn blink-hover text-white border border-5 border border-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          BOOK NOW ‼
+        </button>
+      </div>
+      
+      <h1 class="display-4 mb-4">KLIN SHOTS</h1>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-right">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-white" id="exampleModalLabel">KLINSHOTS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Channel your Deposits for services you are intrested in
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="schedule.html" class="btn btn-primary">View Catalogue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- End of Home Section -->
+
+<!-- Services Section -->
+<section id="services" class="text-center mx-3 bg-light">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Our Services</h1>
+        <p>Below are the services that I provide:</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card card-effect">
+          <img class="card-img-top" src="{%static 'images/image 4.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center ">STREET PHOTOGRAPHY</h5>
+            <p class="card-text">Night,Day and Urban </p>
+            <a href="street.html" class="btn btn-primary">VISIT</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card card-effect">
+          <img class="card-img-top" src="{%static 'images/image 4.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">STUDIO </h5>
+            <p class="card-text">Studio life</p>
+            <a href="studio.html" class="btn btn-primary">VISIT</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card card-effect">
+          <img class="card-img-top" src="{%static 'images/image 4.JPG'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">WEDDING</h5>
+            <p class="card-text"></p>
+            <a href="wedding.html" class="btn btn-primary">VISIT</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card card-effect">
+            <img class="card-img-top" src="{%static 'images/image 4.JPG'%}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">TOURS AND TRAVEL</h5>
+              <p class="card-text">Hikes ,Adventure and Team Buiidings</p>
+              <a href="tours.html" class="btn btn-primary">VISIT</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card card-effect">
+              <img class="card-img-top" src="{%static 'images/image 4.JPG'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">EVENTS</h5>
+                <p class="card-text">Birthdays , Ruracio,Bridal shower</p>
+                <a href="events.html" class="btn btn-primary">VISIT</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card card-effect">
+                <img class="card-img-top" src="{%static 'images/image 4.JPG'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">VIDEOS</h5>
+                  <p class="card-text">Reels,Songs</p>
+                  <a href="videos.html" class="btn btn-primary">VISIT</a>
+                </div>
+              </div>
+              </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Galler section -->
+<div class="align-items-center" id="gallery">
+  <div id="carouselExampleIndicators" class="carousel slide my-0 border-top" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{%static 'images/image 1.JPG'%}" class="d-block w-100" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="{%static 'images/image 2.JPG'%}" class="d-block w-100" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="{%static 'images/image 3.JPG'%}" class="d-block w-100" alt="Image 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+  <!-- End of gallery -->
+  <!-- Begin Pricing -->
+  <section id="pricing" class="text-center mx-3 bg-light"></section>
+  </div>
+        <div class="row mt-4 px-0">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 card-hover">
+              <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">BRONZE PACKAGE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">BOOK</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 card-hover">
+              <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">SILVER PACKAGE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">BOOK</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 card-hover">
+              <img class="card-img-top" src="{%static 'images/DSC_0371.JPG'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">GOLD PACKAGE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">BOOK</a>
+              </div>
+            </div>
+          </div>
+        <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Book the Gold Package</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label for="bookingDate" class="form-label">Select Date</label>
+              <input type="date" class="form-control" id="bookingDate" required>
+            </div>
+           
+            <div class="mb-3">
+              <label for="photographer" class="form-label">Select Photographer</label>
+              <select class="form-select" id="photographer" required>
+                <option selected disabled value="">Choose a photographer...</option>
+                <option value="photographer1">John Doe</option>
+                <option value="photographer2">Jane Smith</option>
+                <option value="photographer3">Alex Brown</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="serviceType" class="form-label">Type of Service</label>
+              <select class="form-select" id="serviceType" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="wedding">Wedding Photography</option>
+                <option value="portrait">Studio Photography</option>
+                <option value="event">Event Photography</option>
+                <option value="product">Street Photography</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="bookingStartTime" class="form-label">Start Time</label>
+              <input type="time" class="form-control" id="bookingStartTime" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookingEndTime" class="form-label">End Time</label>
+              <input type="time" class="form-control" id="bookingEndTime" required>
+            </div>
+            <div class="mb-3">
+              <label for="paymentRate" class="form-label">Payment Rate (KSH per hour)</label>
+              <input type="number" class="form-control" id="paymentRate" readonly>
+            </div>
+            
+            <script>
+              // Constants
+              const RATE_PER_HOUR = 1000;
+            
+              // Function to calculate payment rate
+              function calculateRate() {
+                const startTime = document.getElementById('bookingStartTime').value;
+                const endTime = document.getElementById('bookingEndTime').value;
+            
+                if (startTime && endTime) {
+                  // Convert times to Date objects for calculation
+                  const start = new Date(`1970-01-01T${startTime}:00`);
+                  const end = new Date(`1970-01-01T${endTime}:00`);
+            
+                  // Calculate time difference in hours
+                  const diffInMs = end - start;
+                  const diffInHours = diffInMs / (1000 * 60 * 60); // Convert milliseconds to hours
+            
+                  if (diffInHours > 0) {
+                    // Calculate rate
+                    const rate = diffInHours * RATE_PER_HOUR;
+                    document.getElementById('paymentRate').value = Math.round(rate);
+                  } else {
+                    // Handle invalid time range
+                    document.getElementById('paymentRate').value = 0;
+                    alert("End time must be later than the start time.");
+                  }
+                }
+              }
+            
+              // Attach event listeners to time inputs
+              document.getElementById('bookingStartTime').addEventListener('change', calculateRate);
+              document.getElementById('bookingEndTime').addEventListener('change', calculateRate);
+            </script>
+            
+            <button type="submit" class="btn btn-success">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Collect form data
+      const bookingDate = document.getElementById('bookingDate').value;
+      const bookingTime = document.getElementById('bookingTime').value;
+      const photographer = document.getElementById('photographer').value;
+      const paymentRate = document.getElementById('paymentRate').value;
+
+      // Log the collected data (or handle it as needed)
+      console.log('Booking Date:', bookingDate);
+      console.log('Booking Time:', bookingTime);
+      console.log('Photographer:', photographer);
+      console.log('Payment Rate:', paymentRate);
+
+      // Clear the form and close the modal
+      this.reset();
+      const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+      modal.hide();
+
+      // Optionally display a confirmation message
+      alert('Your booking has been confirmed!');
+    });
+  </script>
+        <!-- //end of pricing -->
+        <section>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45128.787006904065!2d36.85146221537575!3d-1.256524205699658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17eb1d447363%3A0x17a2d29bdcf01fda!2sKCA%20University!5e0!3m2!1sen!2ske!4v1718829571276!5m2!1sen!2ske" width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+  
+  <section id="contact" class="py-0 mt-0  text-center mx-3 bg-light"></section>
+    <footer class="text-center text-lg-start" style="background-color: #323130cb;">
+      <div class="container d-flex justify-content-center py-4">
+          <a href="https://www.facebook.com" target="_blank" style="color: rgb(44, 102, 235); text-decoration: none;">
+              <i class="fa fa-facebook py-3 mx-3"style="font-size: 30px;"></i>
+          </a>
+          <a href=" https://wa.me/0705512551" target="_blank" style="color: rgb(23, 181, 31); text-decoration: none;">
+          <i class="fa fa-whatsapp py-3 mx-3"style="font-size: 30px;"></i> </a>
+          <a href="https://www.facebook.com" target="_blank" style="color: #dd09b3; text-decoration: none;">
+          <i class="fa fa-instagram py-3 mx-3"style="font-size: 30px;"></i></a>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        @ 254:
+        <a class="text-white" href="https://mdbootstrap.com/">KLINSHOT</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+
+  
+  
+    <!--<div class="slideshow-container">
+ <div class="slide">
+      <img class="slide" src="" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img 1 src="" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img 1 src="images/image 3.JPG" alt="Image 3">
+    </div>
+    <a class="prev" onclick="prevSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
+    
+  </div>-->

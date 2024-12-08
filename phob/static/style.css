@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: Poppins, sans-serif;
+  box-sizing:border-box;
+}
+.header h1{
+    font-size: 100px;
+    color: rgb(172, 115, 42);
+    letter-spacing: 40px;
+    text-align: center;
+}
+.head{
+  margin-left: 200px;
+}
+img.image{
+  width: 350px;
+  height:auto;
+  border-radius: 60%;
+  margin-bottom: 10%;
+}
+.para{
+    width: 100%;
+    padding-bottom: 100px;
+    color: hsl(0, 29%, 97%);
+
+}
+/* CSS for large screens */
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header {
+    width: 100%; /* Ensure header takes full width */
+  }
+
+}
+@media (min-width: 392px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header {
+    width: 100%; /* Ensure header takes full width */
+  }
+}
+  
+ 
+
+  
+  /* Style the main content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+
+ 
+
+
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .carousel-inner{
+    margin-bottom:0;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    bottom: 0;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+#carouselExampleIndicators{
+  height: 20%;
+  margin-top: 100px ;
+  padding-top:0% ;
+}
+  /* .slideshow-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+  }.slide {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    display: none;
+  } 
+  
+  img.slide{
+    height: 100px;
+    width: 200px;
+  }
+  .slide:first-child {
+    display: block;
+  }*/.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-bottom: 0;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .navbarNav{
+    display: flex;
+    float: right;
+  }
+  .fa-home{
+    color: aqua;
+  }
+  .fa-envelope{
+    color:aquamarine;
+  }
+  .card-effect{
+    transition: all 0.35s ease-in;
+    cursor: pointer;
+  }
+  .card-effect:hover{
+    transform: translateY(5px);
+  }
+  .custom-btn {
+    width: 150px; /* Reduce the width as needed */
+}
+
+.blink-hover:hover {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+/* Custom animation for modal */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Custom animation for modal */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the modal */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog-right {
+  animation: slideInRight 0.3s forwards;
+}
+
+.modal.fade.show .modal-dialog-bottom {
+  animation: slideInBottom 0.3s forwards;
+}
+
+/* Optional: Ensure modal is aligned to the right */
+.modal-dialog.modal-dialog-right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  max-width: 400px;
+}
+
+@media (max-width: 767.98px) {
+  .modal-dialog.modal-dialog-right {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    max-width: 50%;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.button-container {
+  margin-left: 25%;
+}
